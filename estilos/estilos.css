@@ -2,7 +2,7 @@ body {
     font-family: Consolas, Fixedsys;
     background-color: darkcyan;
     color: #333;
-    display: flexbox;
+    display: auto;
     justify-content: center;
     margin: 0;
     padding: 20px;
@@ -43,7 +43,7 @@ header {
 }
 
 main{
-    display: flex;
+    display: auto;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
