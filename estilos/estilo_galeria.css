@@ -2,6 +2,8 @@ body {
     font-family: Consolas, Fixedsys;
     background-color: darkcyan;
     color: #333;
+    display: flexbox;
+    justify-content: center;
     margin: 0;
     padding: 20px;
 }
@@ -20,7 +22,7 @@ header {
     justify-content: center;
     background-color: #444;
     padding: 10px;
-    margin: 0;
+    margin: flex;
 }
 
 .navbar li {
@@ -40,33 +42,55 @@ header {
     background-color: #666;
 }
 
-
 .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1600px;
+    padding: 20px;
 }
 
-.imagen {
-    overflow: hidden;
-    border-radius: 15px;
+.empleado_tarjeta {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s;
+    text-align: center;
 }
 
-.imagen img {
-    width: 100%;
-    display: block;
-    transition: transform 0.10s;
-}
-
-.imagen img:hover {
+.empleado_tarjeta:hover {
     transform: scale(1.05);
+}
+
+.empleado_tarjeta img {
+    width: 100%;
+    height: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.empleado_info {
+    padding: 15px;
+}
+
+.empleado_info h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.empleado_info p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
 }
 
 section {
     margin-bottom: 20px;
 }
-
 
 footer {
     text-align: center;

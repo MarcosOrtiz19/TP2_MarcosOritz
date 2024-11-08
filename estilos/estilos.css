@@ -2,6 +2,8 @@ body {
     font-family: Consolas, Fixedsys;
     background-color: darkcyan;
     color: #333;
+    display: flexbox;
+    justify-content: center;
     margin: 0;
     padding: 20px;
 }
@@ -20,7 +22,7 @@ header {
     justify-content: center;
     background-color: #444;
     padding: 10px;
-    margin: 0;
+    margin: flex;
 }
 
 .navbar li {
@@ -40,16 +42,37 @@ header {
     background-color: #666;
 }
 
-main {
-    background:  #fff;
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
     padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin: 0 auto;
+    width: 550px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s;
+    text-align: center;
+    margin: auto;
 }
 
-section {
-    margin-bottom: 20px;
+.inicio:hover {
+    transform: scale(1.05);
+}
+
+.inicio{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+section{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
 }
 
 footer {

@@ -2,6 +2,8 @@ body {
     font-family: Consolas, Fixedsys;
     background-color: darkcyan;
     color: #333;
+    display: flexbox;
+    justify-content: center;
     margin: 0;
     padding: 20px;
 }
@@ -20,7 +22,7 @@ header {
     justify-content: center;
     background-color: #444;
     padding: 10px;
-    margin: 0;
+    margin: flex;
 }
 
 .navbar li {
@@ -41,11 +43,15 @@ header {
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
+    gap: 20px;
+    justify-content: center;
 }
 
 table {
@@ -56,12 +62,19 @@ table {
     text-align: left;
 }
 
+th:hover {
+    transform: scale(1.05);
+}
+
+td:hover {
+    transform: scale(1.05);
+}
+
 
 thead {
     background-color: #333;
     color: #fff;
 }
-
 
 th,
 td {
@@ -69,14 +82,9 @@ td {
     padding: 12px;
 }
 
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-
+th,
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: salmon;
 }
 
 section {
